@@ -2,22 +2,25 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Demo = () => {
   return (
-    <div className=" bg-slate-50 py-4  border-neutral-800 pb-4 lg:mb-35 text-center mt-16">
-      <div className="">
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl  tracking-vide my-7">
-          Pellentesque suscipit
-        </h1>
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl  tracking-vide my-7">
-          fringilla libero eu.
-        </h1>
+    <div className="bg-slate-50 py-24 text-center mt-16 border-t border-slate-100">
+      <div className="max-w-4xl mx-auto px-6">
+        {/* MAIN HEADINGS */}
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide text-slate-800 leading-tight">
+          Let’s build something
+        </h2>
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide text-green-500 mt-2 mb-10">
+          remarkable together.
+        </h2>
+
+        {/* CTA BUTTON */}
         <a
           href="#"
-          className="bg-gradient-to-r from-green-500 to-green-500 py-2 px-3 rounded-md mx-3 text-neutral-100"
+          className="group inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-md transition-all duration-200 shadow-lg shadow-green-500/20"
         >
-          Get a Demo
+          <span>Get a Demo</span>
           <FaArrowRight
-            className="inline-block group-hover:!translate-x-2 duration-200 p-2 text-base h-[40px] bg-primaryDark text-neutral-200 size={25} "
-            size={30}
+            className="transform group-hover:translate-x-1 transition-transform duration-200 text-sm"
+            size={16}
           />
         </a>
       </div>

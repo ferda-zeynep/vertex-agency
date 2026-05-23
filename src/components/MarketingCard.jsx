@@ -2,17 +2,28 @@ import { FaArrowRight } from "react-icons/fa";
 
 export const MarketingCardComponent = ({ imgSrc, description }) => {
   return (
-    <div className="relative">
-      <img className="h-64 w-86 mr-2" src={imgSrc} alt="card" />
-      <div className="bg-slate-50 w-64 absolute -bottom-10 left-1/2 transform -translate-x-1/2 text-center">
-        <p className="py-2 text-neutral-500">{description}</p>
-        <span className="bg-gradient-to-r text-green-600 bg-clip-text mx-3">
-          Readmore
+    <div className="relative group mb-16 flex flex-col items-center">
+      {/* CARD IMAGE */}
+      <img
+        className="h-64 w-full max-w-sm rounded-lg object-cover shadow-md"
+        src={imgSrc}
+        alt="Blog post thumbnail"
+      />
+
+      {/* FLOATING TEXT CONTENT CARD */}
+      <div className="bg-slate-50 w-[85%] max-w-[280px] absolute -bottom-12 left-1/2 transform -translate-x-1/2 text-center p-5 rounded-xl shadow-lg border border-slate-100/50 transition-all duration-300 group-hover:-translate-y-1">
+        <p className="text-sm font-medium text-slate-700 leading-snug h-12 overflow-hidden">
+          {description}
+        </p>
+
+        {/* INTERACTIVE READ MORE LINK */}
+        <div className="mt-4 flex items-center justify-center gap-2 text-green-600 font-semibold text-sm cursor-pointer">
+          <span>Read More</span>
           <FaArrowRight
-            className="inline-block group-hover:!translate-x-2 duration-200 p-2 text-base h-[40px] bg-primaryDark text-green-600"
-            size={30}
+            className="transform group-hover:translate-x-1 transition-transform duration-200 text-xs"
+            size={14}
           />
-        </span>
+        </div>
       </div>
     </div>
   );

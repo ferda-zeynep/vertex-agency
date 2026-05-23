@@ -1,34 +1,39 @@
 const Design = () => {
   return (
-    <div className=" border-neutral-800 pb-4 lg:mb-35">
-      <div className="flex flex-wrap">
-        <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center">
-            <img src="/assets/photo3.png" alt="Photo3" />
+    <div className="py-24 bg-white border-b border-slate-100">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex flex-wrap items-center">
+          {/* LEFT COLUMN: IMAGE */}
+          <div className="w-full lg:w-1/2 p-4 flex justify-center">
+            <img
+              className="w-full max-w-md h-auto object-contain"
+              src="/assets/photo3.png"
+              alt="Vertex Agency Design System Illustration"
+            />
           </div>
-        </div>
-        <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center lg:items-start mx-3">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl text-ellipsis tracking-vide my-4">
-              How to design your site footer like we did
-            </h1>
-            <p className="mt-10 text-lg text-ellipsis text-neutral-500 max-w-4xl mx-3 my-4">
-              Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
-              augue nec tincidunt molestie, massa nunc varius arcu, at
-              scelerisque elit erat a magna. Donec quis erat at libero ultrices
-              mollis. In hac habitasse platea dictumst. Vivamus vehicula leo
-              dui, at porta nisi facilisis finibus. In euismod augue vitae nisi
-              ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla
-              commodo faucibus efficitur quis massa. Praesent felis est, finibus
-              et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus
-              ipsum id gravida.
-            </p>
-            <a
-              href="#"
-              className="bg-gradient-to-r from-green-500 to-green-500 text-white py-2 px-3 rounded-md mx-3"
-            >
-              Learn More
-            </a>
+
+          {/* RIGHT COLUMN: TEXT CONTENT */}
+          <div className="w-full lg:w-1/2 mt-12 lg:mt-0">
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-wide text-slate-800 leading-tight">
+                How we design modern digital experiences
+              </h2>
+
+              <p className="mt-6 text-base lg:text-lg text-neutral-500 leading-relaxed font-normal max-w-xl">
+                Every pixel matters. At Vertex Agency, we combine deep user
+                research with cutting-edge engineering to build interfaces that
+                are not only visually stunning but also highly optimized for
+                conversions and retention. We believe design is not just how it
+                looks, but how beautifully it functions.
+              </p>
+
+              <a
+                href="#"
+                className="mt-8 bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-md transition-colors shadow-lg shadow-green-500/20"
+              >
+                Learn More
+              </a>
+            </div>
           </div>
         </div>
       </div>
